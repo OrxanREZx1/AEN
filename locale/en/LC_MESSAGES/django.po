@@ -1,0 +1,327 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-20 01:58+0400\n"
+"PO-Revision-Date: 2026-04-20 01:00+0400\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\aen\settings.py:114
+msgid "English"
+msgstr ""
+
+#: .\aen\settings.py:115
+msgid "Azerbaijani"
+msgstr ""
+
+#: .\core\forms.py:12
+msgid "Your Name (Optional)"
+msgstr ""
+
+#: .\core\forms.py:16
+msgid "Your Email (Optional)"
+msgstr ""
+
+#: .\core\forms.py:20
+msgid "Your Message *"
+msgstr ""
+
+#: .\core\models.py:5
+msgid "Name"
+msgstr ""
+
+#: .\core\models.py:6
+msgid "Email"
+msgstr ""
+
+#: .\core\models.py:7
+msgid "Message"
+msgstr ""
+
+#: .\core\models.py:11
+#, fuzzy
+#| msgid "Send Feedback"
+msgid "Feedback"
+msgstr "Send Feedback"
+
+#: .\core\models.py:12
+#, fuzzy
+#| msgid "Send Feedback"
+msgid "Feedbacks"
+msgstr "Send Feedback"
+
+#: .\core\models.py:16
+msgid "Anonymous"
+msgstr ""
+
+#: .\core\models.py:16
+msgid "No email"
+msgstr ""
+
+#: .\core\views.py:11
+msgid "Your message has been sent successfully!"
+msgstr ""
+
+#: .\core\views.py:14
+msgid "There was an error with your submission. Please check the form."
+msgstr ""
+
+#: .\templates\base.html:7
+msgid "AEN - Find Global Opportunities in One Place"
+msgstr "AEN - Find Global Opportunities in One Place"
+
+#: .\templates\base.html:141
+msgid "Opportunities"
+msgstr "Opportunities"
+
+#: .\templates\base.html:144
+msgid "Why AEN"
+msgstr "Why AEN"
+
+#: .\templates\base.html:147
+msgid "Community"
+msgstr "Community"
+
+#: .\templates\base.html:150
+msgid "Join"
+msgstr "Join"
+
+#: .\templates\base.html:175
+msgid "Join WhatsApp"
+msgstr "Join WhatsApp"
+
+#: .\templates\base.html:202
+msgid ""
+"Akademik Exchange Network. Connecting youth with meaningful opportunities."
+msgstr ""
+"Akademik Exchange Network. Connecting youth with meaningful opportunities."
+
+#: .\templates\base.html:208
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+#: .\templates\base.html:211
+msgid "Terms"
+msgstr "Terms"
+
+#: .\templates\base.html:214
+msgid "Contact"
+msgstr "Contact"
+
+#: .\templates\home.html:13
+msgid "Find Global Opportunities"
+msgstr "Find Global Opportunities"
+
+#: .\templates\home.html:14
+msgid "in One Place"
+msgstr "in One Place"
+
+#: .\templates\home.html:18
+msgid ""
+"Scholarships, hackathons, volunteering programs, trainings, and more — "
+"curated for ambitious youth who want access to meaningful opportunities."
+msgstr ""
+"Scholarships, hackathons, volunteering programs, trainings, and more — "
+"curated for ambitious youth who want access to meaningful opportunities."
+
+#: .\templates\home.html:26
+msgid "Join WhatsApp Community"
+msgstr "Join WhatsApp Community"
+
+#: .\templates\home.html:34
+msgid "See What We Share"
+msgstr "See What We Share"
+
+#: .\templates\home.html:52 .\templates\home.html:188
+msgid "Curated Opportunities"
+msgstr "Curated Opportunities"
+
+#: .\templates\home.html:53
+msgid "Shared regularly with our community"
+msgstr "Shared regularly with our community"
+
+#: .\templates\home.html:57
+msgid ""
+"Scholarships, exchanges, trainings, hackathons, and youth programs selected "
+"for real value."
+msgstr ""
+"Scholarships, exchanges, trainings, hackathons, and youth programs selected "
+"for real value."
+
+#: .\templates\home.html:68
+msgid "What You’ll Find in AEN"
+msgstr "What You’ll Find in AEN"
+
+#: .\templates\home.html:70
+msgid ""
+"AEN shares curated opportunities and programs that help young people grow "
+"academically, professionally, and internationally."
+msgstr ""
+"AEN shares curated opportunities and programs that help young people grow "
+"academically, professionally, and internationally."
+
+#: .\templates\home.html:80
+msgid "SCHOLARSHIP"
+msgstr "SCHOLARSHIP"
+
+#: .\templates\home.html:84
+msgid "International Scholarship Opportunities"
+msgstr "International Scholarship Opportunities"
+
+#: .\templates\home.html:87
+msgid ""
+"Discover curated scholarship calls, academic programs, and funding "
+"opportunities for students seeking international growth."
+msgstr ""
+"Discover curated scholarship calls, academic programs, and funding "
+"opportunities for students seeking international growth."
+
+#: .\templates\home.html:91 .\templates\home.html:112 .\templates\home.html:133
+#: .\templates\home.html:154
+msgid "Learn More"
+msgstr "Learn More"
+
+#: .\templates\home.html:101
+msgid "HACKATHON"
+msgstr "HACKATHON"
+
+#: .\templates\home.html:105
+msgid "Student Hackathons & Competitions"
+msgstr "Student Hackathons & Competitions"
+
+#: .\templates\home.html:108
+msgid ""
+"Explore curated tech competitions, innovation challenges, and startup-"
+"focused events shared with the AEN community."
+msgstr ""
+"Explore curated tech competitions, innovation challenges, and startup-"
+"focused events shared with the AEN community."
+
+#: .\templates\home.html:122
+msgid "VOLUNTEERING"
+msgstr "VOLUNTEERING"
+
+#: .\templates\home.html:126
+msgid "Volunteering & Youth Initiatives"
+msgstr "Volunteering & Youth Initiatives"
+
+#: .\templates\home.html:129
+msgid ""
+"Find local and international volunteering opportunities that help you build "
+"experience, impact, and community connections."
+msgstr ""
+"Find local and international volunteering opportunities that help you build "
+"experience, impact, and community connections."
+
+#: .\templates\home.html:144
+msgid "TRAININGS & EXCHANGES"
+msgstr "TRAININGS & EXCHANGES"
+
+#: .\templates\home.html:148
+msgid "Erasmus+ and International Training Programs"
+msgstr "Erasmus+ and International Training Programs"
+
+#: .\templates\home.html:151
+msgid ""
+"Access youth exchanges, short-term trainings, and international programs "
+"that expand your network and global exposure."
+msgstr ""
+"Access youth exchanges, short-term trainings, and international programs "
+"that expand your network and global exposure."
+
+#: .\templates\home.html:176
+msgid "Designed for Focus."
+msgstr "Designed for Focus."
+
+#: .\templates\home.html:176
+msgid "Built for Action."
+msgstr "Built for Action."
+
+#: .\templates\home.html:179
+msgid ""
+"We reduce the noise and highlight meaningful opportunities so young people "
+"can focus on applying, participating, and growing."
+msgstr ""
+"We reduce the noise and highlight meaningful opportunities so young people "
+"can focus on applying, participating, and growing."
+
+#: .\templates\home.html:190
+msgid ""
+"We focus on sharing opportunities with real academic, professional, and "
+"personal value."
+msgstr ""
+
+#: .\templates\home.html:198
+msgid "No Spam"
+msgstr "No Spam"
+
+#: .\templates\home.html:200
+msgid ""
+"No unnecessary clutter, no irrelevant posts — just useful and focused "
+"opportunity sharing."
+msgstr ""
+"No unnecessary clutter, no irrelevant posts — just useful and focused "
+"opportunity sharing."
+
+#: .\templates\home.html:208
+msgid "Local + Global Reach"
+msgstr "Local + Global Reach"
+
+#: .\templates\home.html:210
+msgid ""
+"From local initiatives to international programs, AEN connects youth with "
+"wider possibilities."
+msgstr ""
+"From local initiatives to international programs, AEN connects youth with "
+"wider possibilities."
+
+#: .\templates\home.html:218
+msgid "Community Support"
+msgstr "Community Support"
+
+#: .\templates\home.html:220
+msgid ""
+"Learn through a community that values growth, collaboration, and access to "
+"meaningful experiences."
+msgstr ""
+"Learn through a community that values growth, collaboration, and access to "
+"meaningful experiences."
+
+#: .\templates\home.html:236
+msgid "Curated updates for ambitious youth"
+msgstr "Curated updates for ambitious youth"
+
+#: .\templates\home.html:240
+msgid "Don’t Miss the Next Opportunity"
+msgstr "Don’t Miss the Next Opportunity"
+
+#: .\templates\home.html:244
+msgid ""
+"Join the AEN WhatsApp community to receive selected scholarships, trainings, "
+"hackathons, volunteering calls, and more."
+msgstr ""
+"Join the AEN WhatsApp community to receive selected scholarships, trainings, "
+"hackathons, volunteering calls, and more."
+
+#: .\templates\home.html:252
+msgid "Join WhatsApp Now"
+msgstr "Join WhatsApp Now"
+
+#: .\templates\home.html:256
+msgid "Free to join."
+msgstr "Free to join."
+
+#: .\templates\home.html:266
+msgid "Have something to share?"
+msgstr "Have something to share?"
+
+#: .\templates\home.html:267
+msgid "Leave your feedback below."
+msgstr "Leave your feedback below."
+
+#: .\templates\home.html:275
+msgid "Send Feedback"
+msgstr "Send Feedback"

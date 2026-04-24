@@ -1,0 +1,223 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html class="light" lang="{{ LANGUAGE_CODE }}">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>{% block title %}{% trans "AEN - Find Global Opportunities in One Place" %}{% endblock %}</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet" />
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-container": "#bf9f62",
+            "on-surface": "#1a1c1e",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#00210f",
+            "on-surface-variant": "#43474e",
+            "surface-bright": "#faf9fc",
+            "inverse-on-surface": "#f1f0f4",
+            "surface-container-low": "#f4f3f7",
+            "surface-container-highest": "#e3e2e5",
+            "surface-container-high": "#e9e7eb",
+            "on-primary-container": "#8ba4cf",
+            "surface-variant": "#e3e2e5",
+            "on-tertiary-fixed": "#261900",
+            "primary-fixed": "#d5e3ff",
+            "background": "#faf9fc",
+            "error": "#ba1a1a",
+            "secondary-fixed-dim": "#7ed99e",
+            "tertiary-container": "#4c3602",
+            "surface-dim": "#dad9dd",
+            "on-secondary": "#ffffff",
+            "primary": "#032448",
+            "surface-tint": "#465f86",
+            "tertiary-fixed-dim": "#e5c281",
+            "secondary-fixed": "#9af6b8",
+            "on-secondary-fixed-variant": "#00522d",
+            "on-secondary-container": "#047240",
+            "primary-container": "#1f3a5f",
+            "surface": "#faf9fc",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed-variant": "#2d476d",
+            "on-tertiary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-background": "#1a1c1e",
+            "outline-variant": "#c4c6cf",
+            "secondary-container": "#97f3b5",
+            "error-container": "#ffdad6",
+            "outline": "#74777f",
+            "on-tertiary-fixed-variant": "#5b430e",
+            "primary-fixed-dim": "#aec8f4",
+            "inverse-primary": "#aec8f4",
+            "inverse-surface": "#2f3033",
+            "secondary": "#006d3d",
+            "surface-container": "#efedf1",
+            "on-primary-fixed": "#001c3b",
+            "tertiary-fixed": "#ffdea4",
+            "tertiary": "#312100",
+            "on-error-container": "#93000a"
+          },
+          borderRadius: {
+            DEFAULT: "1rem",
+            lg: "2rem",
+            xl: "3rem",
+            full: "9999px"
+          },
+          spacing: {},
+          fontFamily: {
+            headline: ["Plus Jakarta Sans"],
+            body: ["Inter"],
+            label: ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: theme('colors.surface');
+      color: #111827;
+    }
+
+    h1, h2, h3, h4, h5, h6, .font-headline {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    .glass-panel {
+      background: rgba(250, 249, 252, 0.8);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+
+    .text-gradient-primary {
+      background: linear-gradient(135deg, theme('colors.primary'), theme('colors.primary-container'));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .bg-gradient-primary {
+      background: linear-gradient(135deg, theme('colors.primary'), theme('colors.primary-container'));
+    }
+
+    .ambient-shadow {
+      box-shadow: 0px 20px 40px rgba(3, 36, 72, 0.05);
+    }
+
+    .ghost-border:focus-within {
+      outline: 2px solid rgba(3, 36, 72, 0.4);
+      outline-offset: -2px;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+  <!-- TopNavBar -->
+  <nav class="bg-white/90 backdrop-blur-[24px] sticky top-0 z-50 bg-surface-container-low shadow-[0px_20px_40px_rgba(3,36,72,0.05)]">
+    <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+      <a href="#hero" class="flex items-center gap-3">
+        <img src="{% static 'images/logo.png' %}" alt="AEN logo" class="h-12 md:h-14 lg:h-16 w-auto object-contain">
+        <span class="font-bold text-lg text-gray-900">AEN</span>
+      </a>
+
+      <div class="hidden md:flex gap-8 items-center">
+        <a class="text-[#1F3A5F] border-b-2 border-[#1F3A5F] pb-1 font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="#opportunities">
+          {% trans "Opportunities" %}
+        </a>
+        <a class="text-gray-600 font-bold font-['Plus_Jakarta_Sans'] tracking-tight hover:text-gray-900 transition-colors" href="#why-aen">
+          {% trans "Why AEN" %}
+        </a>
+        <a class="text-gray-600 font-bold font-['Plus_Jakarta_Sans'] tracking-tight hover:text-gray-900 transition-colors" href="#community">
+          {% trans "Community" %}
+        </a>
+        <a class="text-gray-600 font-bold font-['Plus_Jakarta_Sans'] tracking-tight hover:text-gray-900 transition-colors" href="#join">
+          {% trans "Join" %}
+        </a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="text-sm font-bold font-['Plus_Jakarta_Sans'] flex items-center gap-2 mr-2 md:mr-4">
+          <form action="{% url 'set_language' %}" method="post" class="flex items-center gap-2 m-0">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ request.path }}">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+              <button type="submit" name="language" value="{{ language.code }}" class="{% if language.code == LANGUAGE_CODE %}text-gray-900{% else %}text-gray-500 hover:text-gray-900 transition-colors{% endif %} uppercase">
+                {{ language.code }}
+              </button>
+              {% if not forloop.last %}<span class="text-gray-300">|</span>{% endif %}
+            {% endfor %}
+          </form>
+        </div>
+
+        <a href="{{ WHATSAPP_CHANNEL_URL }}" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white rounded-xl px-6 md:px-8 py-3 md:py-4 font-bold hover:bg-green-700 transition-colors font-['Plus_Jakarta_Sans'] tracking-tight shadow-md">
+          {% trans "Join WhatsApp" %}
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Django Messages -->
+  {% if messages %}
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-12 mt-4 z-40 relative">
+      {% for message in messages %}
+        <div class="p-4 mb-4 rounded-xl {% if message.tags == 'error' %}bg-error-container text-on-error-container{% else %}bg-secondary-container text-on-secondary-container{% endif %}">
+          {{ message }}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <main class="flex-grow">
+    {% block content %}{% endblock content %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-50 rounded-t-[3rem] mt-20">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-16 max-w-screen-2xl mx-auto gap-8">
+      <div class="text-center md:text-left">
+        <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+          <img src="{% static 'images/logo.png' %}" alt="AEN logo" class="h-10 md:h-12 w-auto object-contain">
+          <span class="font-semibold text-gray-700">AEN</span>
+        </div>
+        <p class="text-gray-600 font-['Inter'] leading-relaxed text-sm max-w-md">
+          © {% now "Y" %} {% trans "Akademik Exchange Network. Connecting youth with meaningful opportunities." %}
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-8">
+        <a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-['Inter'] font-medium" href="#">
+          {% trans "Privacy Policy" %}
+        </a>
+        <a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-['Inter'] font-medium" href="#">
+          {% trans "Terms" %}
+        </a>
+        <a class="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-['Inter'] font-medium" href="#feedback">
+          {% trans "Contact" %}
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

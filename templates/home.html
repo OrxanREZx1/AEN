@@ -1,0 +1,279 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-24 md:pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto overflow-hidden">
+      <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary-fixed rounded-full blur-[120px] opacity-20 -z-10 translate-x-1/3 -translate-y-1/3"></div>
+      <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-secondary-fixed rounded-full blur-[100px] opacity-20 -z-10 -translate-x-1/3 translate-y-1/3"></div>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-2xl">
+          <h1 class="text-[2.8rem] md:text-[3.5rem] leading-[1.1] font-extrabold text-gray-900 mb-8 font-headline">
+            {% trans "Find Global Opportunities" %} <br />
+            <span class="text-green-600">{% trans "in One Place" %}</span>
+          </h1>
+
+          <p class="text-xl text-gray-600 mb-12 leading-relaxed font-body">
+            {% trans "Scholarships, hackathons, volunteering programs, trainings, and more — curated for ambitious youth who want access to meaningful opportunities." %}
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-6">
+            <a
+              href="{{ WHATSAPP_CHANNEL_URL }}" target="_blank" rel="noopener noreferrer"
+              class="bg-green-600 text-white rounded-xl px-10 py-5 hover:bg-green-700 transition-colors shadow-lg flex items-center justify-center gap-3 font-bold text-xl"
+            >
+              {% trans "Join WhatsApp Community" %}
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+            </a>
+
+            <a
+              href="#opportunities"
+              class="bg-transparent text-gray-900 hover:bg-gray-50 transition-colors rounded-xl px-10 py-5 font-bold text-lg border border-gray-300 text-center"
+            >
+              {% trans "See What We Share" %}
+            </a>
+          </div>
+        </div>
+
+        <div class="relative h-[600px] rounded-xl overflow-hidden shadow-xl">
+          <img
+            alt="Diverse group of young students collaborating on laptops in a modern, sunlit university common area"
+            class="absolute inset-0 w-full h-full object-cover rounded-xl"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6MUv6Ph7NRTeR8G_RyL5gXS_d5JHU07OLPEtkhe8VPHdE32JFAQlT-vLCK9EChxGj7Kne8Z-dd12BX_xhGyuSM0Vuu38rF3Wp6c32-6gh5BFKPggARUPuT1x70qafgNoopEoYjBdZP_f9mfPF6AlMAUGdqN7xM8xzwDSnRJisekeRczYghd7AxvFnvVlGhYdN_t5lN6V7fKtuuNiZjE_5trwUjAV_PjhDH_qaIzqnNmA-QognsejENTimn93HLvO2-aPt3ozNQGk"
+          />
+
+          <div class="absolute bottom-8 right-8 bg-white/90 backdrop-blur-md rounded-lg p-6 shadow-lg max-w-xs border border-white/50">
+            <div class="flex items-center gap-4 mb-3">
+              <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700">
+                <span class="material-symbols-outlined">emoji_events</span>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-gray-900 font-headline">{% trans "Curated Opportunities" %}</p>
+                <p class="text-xs text-gray-600 font-body">{% trans "Shared regularly with our community" %}</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 font-medium">
+              {% trans "Scholarships, exchanges, trainings, hackathons, and youth programs selected for real value." %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opportunities Preview -->
+    <section id="opportunities" class="py-24 bg-surface-container-low px-6 md:px-12">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="mb-16">
+          <h2 class="text-[2.5rem] font-bold text-gray-900 font-headline mb-4">{% trans "What You’ll Find in AEN" %}</h2>
+          <p class="text-lg text-gray-600 font-body max-w-2xl">
+            {% trans "AEN shares curated opportunities and programs that help young people grow academically, professionally, and internationally." %}
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="md:col-span-2 bg-white rounded-lg p-8 shadow-sm border border-gray-100 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+            <div class="flex justify-between items-start mb-12">
+              <span class="inline-block bg-blue-50 text-blue-700 border border-blue-200 px-4 py-1.5 rounded-full text-sm font-bold tracking-wide font-headline">
+                {% trans "SCHOLARSHIP" %}
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 font-headline mb-4 pr-12 group-hover:text-gray-700 transition-colors">
+              {% trans "International Scholarship Opportunities" %}
+            </h3>
+            <p class="text-gray-600 mb-8 line-clamp-2 text-lg">
+              {% trans "Discover curated scholarship calls, academic programs, and funding opportunities for students seeking international growth." %}
+            </p>
+            <div class="flex items-center justify-between mt-auto">
+              <span class="text-gray-900 font-bold flex items-center gap-2">
+                {% trans "Learn More" %}
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg p-8 shadow-sm border border-gray-100 flex flex-col relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+            <div class="flex justify-between items-start mb-8">
+              <span class="inline-block bg-purple-50 text-purple-700 border border-purple-200 px-4 py-1.5 rounded-full text-sm font-bold tracking-wide font-headline">
+                {% trans "HACKATHON" %}
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 font-headline mb-4 group-hover:text-gray-700 transition-colors">
+              {% trans "Student Hackathons & Competitions" %}
+            </h3>
+            <p class="text-gray-600 mb-8 text-base">
+              {% trans "Explore curated tech competitions, innovation challenges, and startup-focused events shared with the AEN community." %}
+            </p>
+            <div class="mt-auto">
+              <span class="text-gray-900 font-bold flex items-center gap-2">
+                 {% trans "Learn More" %}
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg p-8 shadow-sm border border-gray-100 flex flex-col relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+            <div class="flex justify-between items-start mb-8">
+              <span class="inline-block bg-green-50 text-green-700 border border-green-200 px-4 py-1.5 rounded-full text-sm font-bold tracking-wide font-headline">
+                {% trans "VOLUNTEERING" %}
+              </span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 font-headline mb-4 group-hover:text-gray-700 transition-colors">
+              {% trans "Volunteering & Youth Initiatives" %}
+            </h3>
+            <p class="text-gray-600 mb-8 text-base">
+              {% trans "Find local and international volunteering opportunities that help you build experience, impact, and community connections." %}
+            </p>
+            <div class="mt-auto">
+              <span class="text-gray-900 font-bold flex items-center gap-2">
+                 {% trans "Learn More" %}
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="md:col-span-2 bg-white rounded-lg p-8 shadow-sm border border-gray-100 flex items-center justify-between relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+            <div class="flex-1 pr-8">
+              <div class="flex gap-3 mb-6">
+                <span class="inline-block bg-orange-50 text-orange-700 border border-orange-200 px-4 py-1.5 rounded-full text-sm font-bold tracking-wide font-headline">
+                  {% trans "TRAININGS & EXCHANGES" %}
+                </span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 font-headline mb-4 group-hover:text-gray-700 transition-colors">
+                {% trans "Erasmus+ and International Training Programs" %}
+              </h3>
+              <p class="text-gray-600 text-lg mb-8">
+                {% trans "Access youth exchanges, short-term trainings, and international programs that expand your network and global exposure." %}
+              </p>
+              <span class="text-gray-900 font-bold flex items-center gap-2">
+                {% trans "Learn More" %}
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+              </span>
+            </div>
+
+            <div class="hidden sm:block w-48 h-48 rounded-md overflow-hidden relative">
+              <img
+                alt="Abstract modern architecture representing global institutions"
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDObVNkPzoh7JF993DPejR5W89QiAg7WWX2mFsSe-ZI2boOE3DGyKQmJdxkjm0dUB4bSD7C3mbWXgkolMLAHGu-Ik9fkLKF-N2Ju1JdhLNQWqQ32aWoxKJid_SuwcYpInuu4gSrZbN9n3sy-8-vc--w-VjI6jLLa2s4IjYuSz6zcg-OcQRP_LFP9k3KswhPMOQ5NDY1GVqnSorZrjL-xlpAZuKOU7T2-lpWTAL2wlaC_0wnaLN69BovETvxK7up9BnZ0geZ6_edgFw"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why AEN -->
+    <section id="why-aen" class="py-32 px-6 md:px-12 relative">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-24">
+          <h2 class="text-[2.5rem] font-bold text-gray-900 font-headline mb-6">
+            {% trans "Designed for Focus." %} <br />{% trans "Built for Action." %}
+          </h2>
+          <p class="text-xl text-gray-600 font-body">
+            {% trans "We reduce the noise and highlight meaningful opportunities so young people can focus on applying, participating, and growing." %}
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-12">
+          <div class="flex flex-col items-center text-center">
+            <div class="w-20 h-20 rounded-lg bg-blue-50 flex items-center justify-center mb-8 text-blue-600">
+              <span class="material-symbols-outlined text-[32px]">filter_list</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 font-headline mb-4">{% trans "Curated Opportunities" %}</h3>
+            <p class="text-gray-600 leading-relaxed">
+              {% trans "We focus on sharing opportunities with real academic, professional, and personal value." %}
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div class="w-20 h-20 rounded-lg bg-green-50 flex items-center justify-center mb-8 text-green-600">
+              <span class="material-symbols-outlined text-[32px]">block</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 font-headline mb-4">{% trans "No Spam" %}</h3>
+            <p class="text-gray-600 leading-relaxed">
+              {% trans "No unnecessary clutter, no irrelevant posts — just useful and focused opportunity sharing." %}
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div class="w-20 h-20 rounded-lg bg-purple-50 flex items-center justify-center mb-8 text-purple-600">
+              <span class="material-symbols-outlined text-[32px]">public</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 font-headline mb-4">{% trans "Local + Global Reach" %}</h3>
+            <p class="text-gray-600 leading-relaxed">
+              {% trans "From local initiatives to international programs, AEN connects youth with wider possibilities." %}
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div class="w-20 h-20 rounded-lg bg-orange-50 flex items-center justify-center mb-8 text-orange-600">
+              <span class="material-symbols-outlined text-[32px]">forum</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 font-headline mb-4">{% trans "Community Support" %}</h3>
+            <p class="text-gray-600 leading-relaxed">
+              {% trans "Learn through a community that values growth, collaboration, and access to meaningful experiences." %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community / Join CTA -->
+    <section id="community" class="py-24 px-6 md:px-12 bg-surface-container-low">
+      <div class="max-w-screen-xl mx-auto bg-white border border-gray-100 rounded-2xl p-12 md:p-20 text-center relative overflow-hidden shadow-sm">
+        <div class="relative z-10 max-w-3xl mx-auto">
+          <!-- Refined high-contrast badge -->
+          <div class="inline-flex items-center gap-2 bg-green-50 text-green-700 border border-green-200 px-5 py-2 rounded-full text-sm font-bold mb-8">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+            {% trans "Curated updates for ambitious youth" %}
+          </div>
+
+          <!-- High readability text -->
+          <h2 id="join" class="text-4xl md:text-5xl font-extrabold text-gray-900 font-headline mb-6 leading-tight">
+            {% trans "Don’t Miss the Next Opportunity" %}
+          </h2>
+
+          <p class="text-xl text-gray-600 mb-12 font-body font-medium leading-relaxed max-w-2xl mx-auto">
+            {% trans "Join the AEN WhatsApp community to receive selected scholarships, trainings, hackathons, volunteering calls, and more." %}
+          </p>
+
+          <!-- Vibrant, high-contrast WhatsApp button -->
+          <a
+            href="{{ WHATSAPP_CHANNEL_URL }}" target="_blank" rel="noopener noreferrer"
+            class="bg-green-600 text-white rounded-xl px-12 py-5 text-xl font-bold hover:bg-green-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-1 inline-flex items-center justify-center gap-3 mx-auto"
+          >
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+            {% trans "Join WhatsApp Now" %}
+          </a>
+
+          <p class="text-sm text-gray-500 mt-6 font-medium">
+            {% trans "Free to join." %}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback section placeholder -->
+    <section id="feedback" class="py-24 px-6 md:px-12 bg-surface-container relative">
+      <div class="max-w-screen-md mx-auto bg-white rounded-2xl p-8 shadow-sm border border-gray-100 mt-10">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900 font-headline mb-4">{% trans "Have something to share?" %}</h2>
+          <p class="text-gray-600 font-body">{% trans "Leave your feedback below." %}</p>
+        </div>
+        <form method="post" action="{% url 'core:home' %}">
+            {% csrf_token %}
+            <div class="space-y-4 text-gray-900">
+              {{ form.as_p }}
+            </div>
+            <button type="submit" class="w-full mt-6 bg-gray-900 text-white rounded-xl px-8 py-3 md:py-4 font-bold hover:bg-gray-800 transition-colors font-['Plus_Jakarta_Sans']">
+              {% trans "Send Feedback" %}
+            </button>
+        </form>
+      </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,326 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-20 01:58+0400\n"
+"PO-Revision-Date: 2026-04-20 01:00+0400\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\aen\settings.py:114
+msgid "English"
+msgstr ""
+
+#: .\aen\settings.py:115
+msgid "Azerbaijani"
+msgstr ""
+
+#: core/forms.py:10
+msgid "Your Name (Optional)"
+msgstr "Adınız (İstəyə bağlı)"
+
+#: core/forms.py:14
+msgid "Your Email (Optional)"
+msgstr "E-poçtunuz (İstəyə bağlı)"
+
+#: core/forms.py:18
+msgid "Your Message *"
+msgstr "Mesajınız *"
+
+#: .\core\models.py:5
+msgid "Name"
+msgstr ""
+
+#: .\core\models.py:6
+msgid "Email"
+msgstr ""
+
+#: .\core\models.py:7
+msgid "Message"
+msgstr ""
+
+#: .\core\models.py:11
+#, fuzzy
+#| msgid "Send Feedback"
+msgid "Feedback"
+msgstr "Rəq Göndər"
+
+#: .\core\models.py:12
+#, fuzzy
+#| msgid "Send Feedback"
+msgid "Feedbacks"
+msgstr "Rəq Göndər"
+
+#: .\core\models.py:16
+msgid "Anonymous"
+msgstr ""
+
+#: .\core\models.py:16
+msgid "No email"
+msgstr ""
+
+#: .\core\views.py:11
+msgid "Your message has been sent successfully!"
+msgstr ""
+
+#: .\core\views.py:14
+msgid "There was an error with your submission. Please check the form."
+msgstr ""
+
+#: .\templates\base.html:7
+msgid "AEN - Find Global Opportunities in One Place"
+msgstr "AEN - Qlobal İmkanları Bir Yerdə Tap"
+
+#: .\templates\base.html:141
+msgid "Opportunities"
+msgstr "Fürsətlər"
+
+#: .\templates\base.html:144
+msgid "Why AEN"
+msgstr "Niyə AEN"
+
+#: .\templates\base.html:147
+msgid "Community"
+msgstr "İcma"
+
+#: .\templates\base.html:150
+msgid "Join"
+msgstr "Qoşul"
+
+#: .\templates\base.html:175
+msgid "Join WhatsApp"
+msgstr "WhatsApp-a Qoşul"
+
+#: .\templates\base.html:202
+msgid ""
+"Akademik Exchange Network. Connecting youth with meaningful opportunities."
+msgstr "Akademik Mübadilə Şəbəkəsi. Gəncləri mənalı fürsətlərlə birləşdirir."
+
+#: .\templates\base.html:208
+msgid "Privacy Policy"
+msgstr "Məxfilik Siyasəti"
+
+#: .\templates\base.html:211
+msgid "Terms"
+msgstr "Şərtlər"
+
+#: .\templates\base.html:214
+msgid "Contact"
+msgstr "Əlaqə"
+
+#: .\templates\home.html:13
+msgid "Find Global Opportunities"
+msgstr "Qlobal İmkanları Tap"
+
+#: .\templates\home.html:14
+msgid "in One Place"
+msgstr "Bir Yerdə"
+
+#: .\templates\home.html:18
+msgid ""
+"Scholarships, hackathons, volunteering programs, trainings, and more — "
+"curated for ambitious youth who want access to meaningful opportunities."
+msgstr ""
+"Təqaüdlər, hakatonlar, könüllülük proqramları, təlimlər və daha çoxu — "
+"mənalı fürsətlərə çıxış istəyən iddialı gənclər üçün seçilmişdir."
+
+#: .\templates\home.html:26
+msgid "Join WhatsApp Community"
+msgstr "WhatsApp İcmasına Qoşul"
+
+#: .\templates\home.html:34
+msgid "See What We Share"
+msgstr "Nə Paylaşdığımıza Bax"
+
+#: .\templates\home.html:52 .\templates\home.html:188
+msgid "Curated Opportunities"
+msgstr "Seçilmiş Fürsətlər"
+
+#: .\templates\home.html:53
+msgid "Shared regularly with our community"
+msgstr "İcmamızla mütəmadi olaraq paylaşılır"
+
+#: .\templates\home.html:57
+msgid ""
+"Scholarships, exchanges, trainings, hackathons, and youth programs selected "
+"for real value."
+msgstr ""
+"Real dəyər üçün seçilmiş təqaüdlər, mübadilələr, təlimlər, hakatonlar və "
+"gənclər proqramları."
+
+#: .\templates\home.html:68
+msgid "What You’ll Find in AEN"
+msgstr "AEN-də Nə Tapacaqsınız"
+
+#: .\templates\home.html:70
+msgid ""
+"AEN shares curated opportunities and programs that help young people grow "
+"academically, professionally, and internationally."
+msgstr ""
+"AEN gənclərin akademik, peşəkar və beynəlxalq səviyyədə inkişafına kömək "
+"edən seçilmiş fürsətlər və proqramlar paylaşır."
+
+#: .\templates\home.html:80
+msgid "SCHOLARSHIP"
+msgstr "TƏQAÜD"
+
+#: .\templates\home.html:84
+msgid "International Scholarship Opportunities"
+msgstr "Beynəlxalq Təqaüd Fürsətləri"
+
+#: .\templates\home.html:87
+msgid ""
+"Discover curated scholarship calls, academic programs, and funding "
+"opportunities for students seeking international growth."
+msgstr ""
+"Beynəlxalq inkişaf axtaran tələbələr üçün seçilmiş təqaüd elanları, akademik "
+"proqramlar və maliyyə fürsətlərini kəşf edin."
+
+#: .\templates\home.html:91 .\templates\home.html:112 .\templates\home.html:133
+#: .\templates\home.html:154
+msgid "Learn More"
+msgstr "Daha Çox Öyrən"
+
+#: .\templates\home.html:101
+msgid "HACKATHON"
+msgstr "HAKATON"
+
+#: .\templates\home.html:105
+msgid "Student Hackathons & Competitions"
+msgstr "Tələbə Hakatonları və Yarışmaları"
+
+#: .\templates\home.html:108
+msgid ""
+"Explore curated tech competitions, innovation challenges, and startup-"
+"focused events shared with the AEN community."
+msgstr ""
+"AEN icması ilə paylaşılan seçilmiş texnoloji yarışmaları, innovasiya "
+"sınaqlarını və startap yönümlü tədbirləri kəşf edin."
+
+#: .\templates\home.html:122
+msgid "VOLUNTEERING"
+msgstr "KÖNÜLLÜLÜK"
+
+#: .\templates\home.html:126
+msgid "Volunteering & Youth Initiatives"
+msgstr "Könüllülük və Gənclər Təşəbbüsləri"
+
+#: .\templates\home.html:129
+msgid ""
+"Find local and international volunteering opportunities that help you build "
+"experience, impact, and community connections."
+msgstr ""
+"Təcrübə, təsir və icma əlaqələri qurmağınıza kömək edən yerli və beynəlxalq "
+"könüllülük fürsətlərini tapın."
+
+#: .\templates\home.html:144
+msgid "TRAININGS & EXCHANGES"
+msgstr "TƏLİMLƏR VƏ MÜBADİLƏLƏR"
+
+#: .\templates\home.html:148
+msgid "Erasmus+ and International Training Programs"
+msgstr "Erasmus+ və Beynəlxalq Təlim Proqramları"
+
+#: .\templates\home.html:151
+msgid ""
+"Access youth exchanges, short-term trainings, and international programs "
+"that expand your network and global exposure."
+msgstr ""
+"Şəbəkənizi və qlobal dünyagörüşünüzü genişləndirən gənclər mübadilələrinə, "
+"qısamüddətli təlimlərə və beynəlxalq proqramlara daxil olun."
+
+#: .\templates\home.html:176
+msgid "Designed for Focus."
+msgstr "Fokuslanmaq üçün Dizayn Edilib."
+
+#: .\templates\home.html:176
+msgid "Built for Action."
+msgstr "Fəaliyyət üçün Qurulub."
+
+#: .\templates\home.html:179
+msgid ""
+"We reduce the noise and highlight meaningful opportunities so young people "
+"can focus on applying, participating, and growing."
+msgstr ""
+"Biz küy-küyü azaldır və mənalı fürsətləri vurğulayırıq ki, gənclər müraciət "
+"etməyə, iştirak etməyə və böyüməyə fokuslana bilsinlər."
+
+#: .\templates\home.html:190
+msgid ""
+"We focus on sharing opportunities with real academic, professional, and "
+"personal value."
+msgstr ""
+
+#: .\templates\home.html:198
+msgid "No Spam"
+msgstr "Spam Yoxdur"
+
+#: .\templates\home.html:200
+msgid ""
+"No unnecessary clutter, no irrelevant posts — just useful and focused "
+"opportunity sharing."
+msgstr ""
+"Heç bir lüzumsuz dağınıqlıq, faydasız postlar yoxdur - sadəcə faydalı və "
+"fokuslanmış fürsət paylaşımı."
+
+#: .\templates\home.html:208
+msgid "Local + Global Reach"
+msgstr "Yerli + Qlobal Çatımlılıq"
+
+#: .\templates\home.html:210
+msgid ""
+"From local initiatives to international programs, AEN connects youth with "
+"wider possibilities."
+msgstr ""
+"Yerli təşəbbüslərdən beynəlxalq proqramlara qədər, AEN gəncləri daha geniş "
+"imkanlarla birləşdirir."
+
+#: .\templates\home.html:218
+msgid "Community Support"
+msgstr "İcma Dəstəyi"
+
+#: .\templates\home.html:220
+msgid ""
+"Learn through a community that values growth, collaboration, and access to "
+"meaningful experiences."
+msgstr ""
+"İnkişafı, əməkdaşlığı və mənalı təcrübələrə çıxışı dəyərləndirən bir icma "
+"vasitəsilə öyrənin."
+
+#: .\templates\home.html:236
+msgid "Curated updates for ambitious youth"
+msgstr "İddialı gənclər üçün seçilmiş yeniliklər"
+
+#: .\templates\home.html:240
+msgid "Don’t Miss the Next Opportunity"
+msgstr "Növbəti Fürsəti Qaçırmayın"
+
+#: .\templates\home.html:244
+msgid ""
+"Join the AEN WhatsApp community to receive selected scholarships, trainings, "
+"hackathons, volunteering calls, and more."
+msgstr ""
+"Seçilmiş təqaüdlər, təlimlər, hakatonlar, könüllü çağırışları və daha çoxunu "
+"almaq üçün AEN WhatsApp icmasına qoşulun."
+
+#: .\templates\home.html:252
+msgid "Join WhatsApp Now"
+msgstr "İndi WhatsApp-a Qoşul"
+
+#: .\templates\home.html:256
+msgid "Free to join."
+msgstr "Qoşulmaq pulsuzdur."
+
+#: .\templates\home.html:266
+msgid "Have something to share?"
+msgstr "Paylaşmağa nəsə var?"
+
+#: .\templates\home.html:267
+msgid "Leave your feedback below."
+msgstr "Aşağıda rəyinizi qeyd edin."
+
+#: .\templates\home.html:275
+msgid "Send Feedback"
+msgstr "Rəyinizi Göndərin"
