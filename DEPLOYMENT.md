@@ -42,6 +42,11 @@ Go to your service's **Variables** tab and add the following keys.
 **WhatsApp Variables:**
 - `WHATSAPP_CHANNEL_URL`: `https://whatsapp.com/channel/0029Vb76VSzEFeXkl3Eyyq26`
 
+**Superuser Variables (One-time setup):**
+- `DJANGO_SUPERUSER_USERNAME`: `admin`
+- `DJANGO_SUPERUSER_EMAIL`: `your_email@gmail.com`
+- `DJANGO_SUPERUSER_PASSWORD`: `your_strong_password`
+
 ## 5. Generate a Public Domain
 1. Go to the **Settings** tab of your service.
 2. Under **Networking**, click **Generate Domain** (or add your custom domain).
@@ -60,8 +65,8 @@ Once the deployment finishes building, you need to set up your database tables a
    # Bundle CSS/JS for WhiteNoise to serve
    python manage.py collectstatic --noinput
 
-   # (Optional) Create an admin superuser
-   python manage.py createsuperuser
+   # Create an admin superuser automatically (using the environment variables you set)
+   python manage.py create_admin
    ```
 
 ## 7. Verification
