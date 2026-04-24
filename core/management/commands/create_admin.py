@@ -18,9 +18,16 @@ class Command(BaseCommand):
             ))
             return
 
-        if User.objects.filter(username=username).exists():
+        user_qs = User.objects.filter(username=username)
+        if user_qs.exists():
+            user = user_qs.first()
+            user.email = email
+            user.is_staff = True
+            user.is_superuser = True
+            user.set_password(password)
+            user.save()
             self.stdout.write(self.style.SUCCESS(
-                f'Superuser "{username}" already exists. Skipping creation.'
+                f'Superuser "{username}" already exists. Password and permissions have been updated.'
             ))
             return
 
