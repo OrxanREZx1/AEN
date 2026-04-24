@@ -20,7 +20,7 @@ def home(request):
                     message=f"Name: {feedback.name}\nEmail: {feedback.email}\nMessage: {feedback.message}",
                     from_email=settings.DEFAULT_FROM_EMAIL,
                     recipient_list=[settings.FEEDBACK_RECEIVER_EMAIL],
-                    fail_silently=False
+                    fail_silently=True,
                 )
             except Exception as e:
                 print("EMAIL ERROR:", e)
