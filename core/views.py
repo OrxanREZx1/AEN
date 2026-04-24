@@ -14,30 +14,16 @@ def home(request):
         if form.is_valid():
             feedback = form.save()
             
-            import threading
-
-            def send_feedback_email_bg(fb):
-                try:
-                    subject = "New AEN Feedback Submission"
-                    message_body = (
-                        f"New feedback received on AEN Landing Page.\n\n"
-                        f"Name: {fb.name or 'Not Provided'}\n"
-                        f"Email: {fb.email or 'Not Provided'}\n"
-                        f"Message:\n{fb.message}\n\n"
-                        f"Submitted at: {fb.created_at.strftime('%Y-%m-%d %H:%M:%S')}"
-                    )
-                    send_mail(
-                        subject,
-                        message_body,
-                        settings.DEFAULT_FROM_EMAIL,
-                        [settings.FEEDBACK_RECEIVER_EMAIL],
-                        fail_silently=True,
-                    )
-                except Exception as e:
-                    logger.error(f"Failed to send feedback email: {e}")
-
-            # Send Email in background to prevent Railway worker timeout
-            threading.Thread(target=send_feedback_email_bg, args=(feedback,)).start()
+            try:
+                send_mail(
+                    subject="New AEN Feedback",
+                    message=f"Name: {feedback.name}\nEmail: {feedback.email}\nMessage: {feedback.message}",
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[settings.FEEDBACK_RECEIVER_EMAIL],
+                    fail_silently=False
+                )
+            except Exception as e:
+                print("EMAIL ERROR:", e)
 
             messages.success(request, _('Your message has been sent successfully!'))
             return redirect('core:home')
