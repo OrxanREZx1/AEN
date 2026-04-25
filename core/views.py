@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.utils.translation import gettext as _
-from django.core.mail import send_mail
-from django.conf import settings
 from .forms import FeedbackForm
+import os
+import resend
 import logging
 
 logger = logging.getLogger(__name__)
@@ -15,15 +15,19 @@ def home(request):
             feedback = form.save()
             
             try:
-                send_mail(
-                    subject="New AEN Feedback",
-                    message=f"Name: {feedback.name}\nEmail: {feedback.email}\nMessage: {feedback.message}",
-                    from_email=settings.DEFAULT_FROM_EMAIL,
-                    recipient_list=[settings.FEEDBACK_RECEIVER_EMAIL],
-                    fail_silently=True,
-                )
+                resend.api_key = os.getenv("RESEND_API_KEY")
+                resend.Emails.send({
+                    "from": os.getenv("DEFAULT_FROM_EMAIL"),
+                    "to": [os.getenv("FEEDBACK_RECEIVER_EMAIL")],
+                    "subject": "New AEN Feedback",
+                    "html": f"""
+                        <p><strong>Name:</strong> {feedback.name}</p>
+                        <p><strong>Email:</strong> {feedback.email}</p>
+                        <p><strong>Message:</strong> {feedback.message}</p>
+                    """
+                })
             except Exception as e:
-                print("EMAIL ERROR:", e)
+                print("RESEND ERROR:", e)
 
             messages.success(request, _('Your message has been sent successfully!'))
             return redirect('core:home')
