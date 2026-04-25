@@ -45,13 +45,13 @@ msgstr ""
 #, fuzzy
 #| msgid "Send Feedback"
 msgid "Feedback"
-msgstr "Rəq Göndər"
+msgstr "Rəy Göndər"
 
 #: .\core\models.py:12
 #, fuzzy
 #| msgid "Send Feedback"
 msgid "Feedbacks"
-msgstr "Rəq Göndər"
+msgstr "Rəy Göndər"
 
 #: .\core\models.py:16
 msgid "Anonymous"
@@ -244,7 +244,7 @@ msgid ""
 "We reduce the noise and highlight meaningful opportunities so young people "
 "can focus on applying, participating, and growing."
 msgstr ""
-"Biz küy-küyü azaldır və mənalı fürsətləri vurğulayırıq ki, gənclər müraciət "
+"Biz səs-küyü azaldır və mənalı fürsətləri vurğulayırıq ki, gənclər müraciət "
 "etməyə, iştirak etməyə və böyüməyə fokuslana bilsinlər."
 
 #: .\templates\home.html:190
