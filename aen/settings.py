@@ -29,14 +29,22 @@ dotenv.load_dotenv(BASE_DIR / '.env', override=True)
 SECRET_KEY = os.environ.get('SECRET_KEY', "django-insecure-)mdxksrnm2lj&4-16pwv3k_@+c#0@*(z-)qv0i6dmof*ba)se!")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+DEBUG = os.environ.get("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = [host.strip() for host in os.environ.get('ALLOWED_HOSTS', '127.0.0.1,localhost').split(',') if host.strip()]
+ALLOWED_HOSTS = [
+    host.strip()
+    for host in os.environ.get("ALLOWED_HOSTS", "").split(",")
+    if host.strip()
+]
 
 # CSRF settings for production (e.g., https://your-app.up.railway.app)
-csrf_origins = os.environ.get('CSRF_TRUSTED_ORIGINS', '')
-if csrf_origins:
-    CSRF_TRUSTED_ORIGINS = [origin.strip() for origin in csrf_origins.split(',') if origin.strip()]
+CSRF_TRUSTED_ORIGINS = [
+    origin.strip()
+    for origin in os.environ.get("CSRF_TRUSTED_ORIGINS", "").split(",")
+    if origin.strip()
+]
+
+SECURE_SSL_REDIRECT = os.environ.get("SECURE_SSL_REDIRECT", "False") == "True"
 
 # Application definition
 
